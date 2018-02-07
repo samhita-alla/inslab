@@ -1,4 +1,3 @@
-import os, sys
 from random import randrange
 from Crypto.Cipher import Blowfish
 import timeit
