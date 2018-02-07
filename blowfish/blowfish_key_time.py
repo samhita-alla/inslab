@@ -17,7 +17,8 @@ class BFCipher:
         pad_bytes = 8 - (len(data) % 8)
         for i in range(pad_bytes - 1):
             data += chr(randrange(0,256))
-        bflag = randrange(6, 248); bflag -= bflag % 8 - pad_bytes
+        bflag = randrange(6, 248)
+        bflag -= bflag % 8 - pad_bytes
         data += chr(bflag)
         return data
 
