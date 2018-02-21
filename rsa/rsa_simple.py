@@ -33,7 +33,4 @@ for k in enc:
 		c%=n
 	c%=n
 	dec.append(chr(c+97))
-str=' '
-for k in dec:
-	str+=k
-print 'decrypted data is: '+str[1:]
+print 'decrypted data is: '+''.join(dec)
