@@ -6,8 +6,7 @@ class BFCipher:
         self.pad_bytes = 0
 
     def encrypt(self,data = ''):
-        ciphertext = self.cipher.encrypt(self.pad_data(data))
-        return ciphertext
+        return self.cipher.encrypt(self.pad_data(data))
 
     def decrypt(self,data = ''):
         return self.unpad_data(self.cipher.decrypt(data))
