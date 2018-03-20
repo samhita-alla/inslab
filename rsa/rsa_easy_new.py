@@ -1,3 +1,4 @@
+p = input()
 q = input()
 e = input()
 n = p * q
