@@ -2,7 +2,6 @@ from OpenSSL import crypto, SSL
 from time import gmtime
 
 def create_self_signed_cert():
-  
   k = crypto.PKey()
   k.generate_key(crypto.TYPE_RSA, 1024)
 
