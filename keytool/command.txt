@@ -1,0 +1,1 @@
+keytool -genkeypair -alias test_certificate -keystore test_keystore.pfx -storepass password -validity 3650 -keyalg RSA -keysize 1024 -storetype pkcs12
